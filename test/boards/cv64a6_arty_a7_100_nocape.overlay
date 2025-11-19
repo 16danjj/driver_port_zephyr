@@ -1,0 +1,14 @@
+/ {
+    chosen {
+        zephyr,canbus = &pmod_can;
+    };
+};
+
+&pmod_can {
+    osc-freq = <16000000>;
+
+    can-transceiver {
+        max-bitrate = <1000000>;
+    };
+};
+
